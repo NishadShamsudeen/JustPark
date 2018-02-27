@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.justpark.Baement1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linerlayoutselection"
+            android:orientation="vertical"
+            android:background="@drawable/custom_timebackground"
+            android:padding="5dp"
+            android:layout_margin="3dp">
+                <TextView style="@style/title"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/mallname"
+                    android:text="Lulu Mall"/>
+
+                <TextView style="@style/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/malllocation"
+                    android:text="Address: 34/1000, N.H 47, Edapally, Kochi, Kerala 682024"
+                    android:textSize="15sp"/>
+
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hourpicker"
+            android:layout_below="@+id/linerlayoutselection"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_timebackground"
+            android:layout_margin="3dp">
+
+                <TextView style="@style/textstyle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="Hours" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_centerInParent="true">
+
+                        <Button  style="@style/button_selection"
+                            android:id="@+id/decrease"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/integer_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:textSize="30sp" />
+
+                        <Button  style="@style/button_selection"
+                            android:id="@+id/increase"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:onClick="increaseInteger"
+                            android:text="+" />
+
+                </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/dateandtime"
+            android:layout_below="@+id/hourpicker">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time1"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:background="@drawable/custom_timebackground"
+                    android:orientation="vertical">
+
+                        <TextView style="@style/textstyle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Start Time"/>
+                        <TextView style="@style/textstyle2"
+                            android:id="@+id/crnt_time"
+                            android:textColor="@color/background"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="14 Sep,16:18"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:id="@+id/time2"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/custom_timebackground"
+                    android:orientation="vertical">
+                        <TextView style="@style/textstyle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="End Time"/>
+                        <TextView style="@style/textstyle2"
+                            android:textColor="@color/background"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/crnttimeplus1"
+                            android:text="14 Sep,17:18"/>
+                </LinearLayout>
+        </LinearLayout>
+
+
+        <WebView android:id="@+id/MyWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_below="@+id/dateandtime">
+        </WebView>
+
+
+</RelativeLayout>

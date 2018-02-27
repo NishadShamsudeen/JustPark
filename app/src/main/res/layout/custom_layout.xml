@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:padding="1dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/lulu_image"
+        android:src="@drawable/centre"
+        android:layout_marginRight="10dp"/>
+
+    <TextView style="@style/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mall_name"
+        android:text="Lulu Mall"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/lulu_image"/>
+
+    <TextView style="@style/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/mall_description"
+        android:text="This is sample data about the Mall"
+        android:textSize="15dp"
+        android:layout_below="@+id/mall_name"
+        android:layout_toRightOf="@+id/lulu_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:id="@+id/mall_location"
+        android:text="Kochi"
+        android:textSize="13dp"
+        android:layout_below="@+id/mall_description"
+        android:layout_toRightOf="@+id/lulu_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textStyle="bold"
+        android:id="@+id/mall_type"
+        android:text="Type: Mall"
+        android:textSize="13dp"
+        android:layout_below="@+id/mall_description"
+        android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

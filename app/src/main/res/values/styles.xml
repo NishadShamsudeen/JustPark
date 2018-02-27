@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="textstyle1">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+
+
+    <style name="title">
+    <item name="android:fontFamily">Avenir</item>
+    <item name="android:textColor">@color/text_title_color</item>
+
+    </style>
+
+    <style name="description">
+        <item name="android:fontFamily">Avenir</item>
+        <item name="android:textColor">@color/text_title_color</item>
+    </style>
+
+    <style name="button_selection">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@drawable/custom_edittext</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="paybutton">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/custom_paybutton</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+    <style name="textstyle2">
+        <item name="android:textSize">16dp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">@color/text_title_color</item>
+    </style>
+</resources>

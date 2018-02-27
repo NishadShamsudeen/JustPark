@@ -1,0 +1,159 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.justpark.GroundFloor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:id="@+id/general"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/seperator4"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/timestampbgc"
+                android:textColor="@color/text_title_color"
+                android:textSize="18sp"
+                android:padding="20dp"
+                android:text="General"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/grneraltext"
+                    android:text="The officiA Plc)he registered office is FAO Sylvia Welsh Manchester Professional Services Limited, PO BOX 532, Town Hall, Manchester, M60 2LA.: " />
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:id="@+id/bookings"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/timestampbgc"
+                android:textColor="@color/text_title_color"
+                android:textSize="18sp"
+                android:padding="20dp"
+                android:text="Bookings"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/bookingtext"
+                    android:text="Where you have booked your car parking with us (rather than a sales agent), you can cancel the contract by giving us at least 24 hours’ notice prior to the car park arrival time and date, subject to payment of a cancellation fee (please see below). You will receive email confirmation of the cancellation. Any bookings cancelled within 24 hours of the car park arrival date will not be refunded." />
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:id="@+id/cancellation"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/timestampbgc"
+                android:textColor="@color/text_title_color"
+                android:textSize="18sp"
+                android:padding="20dp"
+                android:text="Cancellation"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/canceltext"
+                    android:text="Payment must be made in advance and online. Payment may be made using one of the payment methods set out on the website. We reserve the right not to fulfil your booking if your card is declined for any reason, if the payment card has been used fraudulently or without the cardholder's permission, or if you are under the age of 18. " />
+
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:id="@+id/entryexit"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/timestampbgc"
+                android:textColor="@color/text_title_color"
+                android:textSize="18sp"
+                android:padding="20dp"
+                android:text="Entry/Exit Procedures"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/entrytext"
+                    android:text="You must enter/exit the car park following the instructions provided to you in your e-mail confirmation and on the car park booking confirmation page. Please be aware that some of our car parks use a number plate recognition service and as such if your number plate is not recognised or is not consistent with the number plate for which you have booked, you will need to press the barrier ‘Assistance’ button." />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
